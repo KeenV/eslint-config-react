@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/KeenV/eslint-config-react/issues"
   },
-  "homepage": "https://github.com/KeenV/eslint-config-react#readme"
+  "homepage": "https://github.com/KeenV/eslint-config-react#readme",
+  "peerDependencies": {
+    "eslint": "^7.22.0"
+  }
 }
