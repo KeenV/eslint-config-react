@@ -14,8 +14,18 @@ module.exports = {
       jsx: true
     }
   },
+  plugins: [
+    'import'
+  ],
+  settings: {
+    'import/extensions': [
+      '.js',
+      '.jsx'
+    ]
+  },
   extends: [
     'eslint:recommended',
+    'plugin:import/recommended'
   ],
   rules: {
     // Possible Problems
