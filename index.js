@@ -20,6 +20,7 @@ module.exports = {
   settings: {
     'import/extensions': [
       '.js',
+      '.mjs',
       '.jsx'
     ]
   },
@@ -209,6 +210,21 @@ module.exports = {
     'template-tag-spacing': ['warn', 'never'],
     'unicode-bom': ['warn', 'never'],
     'wrap-iife': ['warn', 'inside', { functionPrototypeMethods: true }],
-    'yield-star-spacing': ['warn', 'after']
+    'yield-star-spacing': ['warn', 'after'],
+
+    // import
+    'import/no-absolute-path': 'error',
+    'import/no-self-import': 'error',
+    'import/no-cycle': 'error',
+    'import/no-useless-path-segments': 'error',
+    'import/first': 'warn',
+    'import/extensions': ['warn', {
+      js: 'never',
+      mjs: 'never',
+      jsx: 'never',
+    }],
+    'import/order': ['warn', { groups: [['builtin', 'external', 'internal']] }],
+    'import/newline-after-import': 'warn',
+    'import/no-named-default': 'error',
   }
 }
