@@ -3,4 +3,21 @@ module.exports = {
     './lib/base',
     './lib/import',
   ],
+  overrides: {
+    files: ['**/*.ts?(x)'],
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+      ecmaVersion: 2018,
+      sourceType: 'module',
+      ecmaFeatures: {
+        jsx: true,
+      },
+
+      // typescript-eslint specific options
+      warnOnUnsupportedTypeScriptVersion: true,
+    },
+    extends: [
+      './lib/typescript',
+    ],
+  },
 }
