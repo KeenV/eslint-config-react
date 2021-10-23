@@ -3,6 +3,7 @@ module.exports = {
     './lib/base',
     './lib/import',
     './lib/react',
+    './lib/react-hooks',
   ],
   overrides: {
     files: ['**/*.ts?(x)'],
