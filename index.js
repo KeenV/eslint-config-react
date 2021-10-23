@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     './lib/base',
     './lib/import',
+    './lib/react',
   ],
   overrides: {
     files: ['**/*.ts?(x)'],
