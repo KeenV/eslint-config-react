@@ -19,6 +19,7 @@ module.exports = {
       warnOnUnsupportedTypeScriptVersion: true,
     },
     extends: [
+      'plugin:import/typescript',
       './lib/typescript',
     ],
   },
