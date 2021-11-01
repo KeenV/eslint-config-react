@@ -5,7 +5,7 @@ module.exports = {
     './lib/react',
     './lib/react-hooks',
   ],
-  overrides: {
+  overrides: [{
     files: ['**/*.ts?(x)'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -22,5 +22,5 @@ module.exports = {
       'plugin:import/typescript',
       './lib/typescript',
     ],
-  },
+  }],
 }

@@ -1,1 +1,6 @@
-module.exports = require('./index')
+module.exports = {
+  ...require('./index'),
+  parserOptions: {
+    requireConfigFile: false,
+  },
+}
